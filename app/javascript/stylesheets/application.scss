@@ -1,8 +1,9 @@
-@import './vendors/bootstrap';
+@import 'bootstrap/scss/bootstrap';
 @import './vendors/awesome';    
 @import './vendors/header';
 @import './vendors/services';
 @import './vendors/about';
+@import '@splidejs/splide/dist/css/splide.min.css';
 
 body{
     font-family: 'Dosis', sans-serif;
@@ -20,7 +21,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   
   /* Track */
@@ -31,6 +32,30 @@ h1, h2, h3, h4, h5, h6{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #000000; 
+    background: #f73b56; 
     border-radius: 0px;
+  }
+
+ #go-top{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    &:hover {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .splide{
+    width: 100%;
+    .splide__slide{
+      width: 50px;
+      height: 200px;
+    }
   }

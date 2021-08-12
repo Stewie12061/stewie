@@ -1,5 +1,4 @@
 import ApplicationController from './application_controller'
-import lozad from 'lozad'
 
 export default class extends ApplicationController {
   static targets = ['primary']
