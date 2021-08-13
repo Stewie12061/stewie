@@ -4,6 +4,7 @@
 @import './vendors/services';
 @import './vendors/about';
 @import '@splidejs/splide/dist/css/splide.min.css';
+@import './vendors/testimonial';
 
 body{
     font-family: 'Dosis', sans-serif;
@@ -52,10 +53,4 @@ h1, h2, h3, h4, h5, h6{
     }
   }
 
-  .splide{
-    width: 100%;
-    .splide__slide{
-      width: 50px;
-      height: 200px;
-    }
-  }
+  
