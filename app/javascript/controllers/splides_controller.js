@@ -17,7 +17,8 @@ export default class extends ApplicationController {
             autoplay: true,
             interval: 3000,
             type: 'slide',
-            arrows: false
+            arrows: false,
+            rewind: true
         }).mount(); 
     }
 }

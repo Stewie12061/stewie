@@ -11,19 +11,18 @@
 .home_text{
 	padding-top: 210px;
 	padding-bottom: 170px;
+	h2{
+		color: #010101;
+		font-size: 40px;
+		text-transform: uppercase;
+		letter-spacing: 13px;
+	}
+	p{
+		color: #404040;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
 }
-.home_text h2{
-	color: #010101;
-	font-size: 40px;
-	text-transform: uppercase;
-	letter-spacing: 13px;
-}
-.home_text p{
-	color: #404040;
-	font-size: 15px;
-	text-transform: uppercase;
-}
-
 .navbar-right{
     margin: auto;
     font-size: 17px;   
@@ -34,12 +33,12 @@
 }
 .scroll_down{
 	padding-bottom: 50px;
-}
-.scroll_down h4{
-	font-size: 12px;
-	color: #000;
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
+	h4{
+		font-size: 12px;
+		color: #000;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+	}
 }
 .navbar-fixed{
     position: sticky;
