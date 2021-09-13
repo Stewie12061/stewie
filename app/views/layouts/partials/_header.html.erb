@@ -1,26 +1,30 @@
 <div id="header" data-controller='scroll'>
-  
+<div class="section_overlay">
   <nav class="navbar navbar-expand-md navbar-light bg-light navbar-fixed" data-scroll-target="primary" id="navbar_main">
     <div class="container">
     
-      <a class="navbar-brand" href="<%= root_path %>">
-        <img src="<%= asset_pack_path 'media/images/logo.png' %>" alt="">
+      <a class="navbar-brand" href="<%= root_path %>" data-scroll-target="primary" id="navbar_logo">
+        <%= image_pack_tag "stewielogo.png", alt:"" %>
       </a>
 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
       <div class="collapse navbar-collapse" id="navbarScroll">
         <%= render 'layouts/partials/right_menu' %>
       </div>
 
     </div>
   </nav>
-  <div class="section_overlay">
+  
   <div class="container">
       <div class="row">
           <div class="col-md-12 text-center">
               <div class="home_text">
-                  <h2>it’s abdullah noman</h2>
-                  <p>a user interface and user experience specialist</p>
-                  <img src="<%= asset_pack_path 'media/images/shape.png' %>" alt="">                        
+                <h2>it’s abdullah noman</h2>
+                <p>a user interface and user experience specialist</p>
+                <%= image_pack_tag "shape.png", alt:"" %>                       
               </div>
           </div>
       </div>
@@ -29,8 +33,10 @@
       <div class="row">
           <div class="col-md-12 text-center">
               <div class="scroll_down">
-                <a href="#"><img src="<%= asset_pack_path 'media/images/scroll.png' %>" alt=""></a>
-                  <h4>Scroll Down</h4>
+                <a href="#">
+                  <%= image_pack_tag "scroll.png", alt:"" %>
+                </a>
+                <h4>Scroll Down</h4>
               </div>
           </div>
       </div>

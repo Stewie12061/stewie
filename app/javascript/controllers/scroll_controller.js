@@ -33,6 +33,9 @@ export default class extends ApplicationController {
       document.getElementById("go-top").classList.add('d-none');
     }
     this.navbarWillFixed(scrollY)
+    this.navbarChangeColor(scrollY)
+    this.navbarLogoChange(scrollY)
+    this.navbarTextChange(scrollY)
   }
 
   gotoTop(event) {
@@ -48,4 +51,33 @@ export default class extends ApplicationController {
       classes.remove('navbar-fixed');
     }
   }
+  navbarChangeColor(scrollY) {
+    let classes = document.querySelector("#navbar_main").classList;
+    if (scrollY >= 120) {
+      classes.add('bg-stewie');
+      classes.remove('bg-light');
+    } else {
+      classes.remove('bg-stewie');
+      classes.add('bg-light');
+    }
+  }
+  navbarLogoChange(scrollY){
+    let classes = document.querySelector("#navbar_logo").classList;
+    if (scrollY >= 120) {
+      classes.add('bg-logo');
+    } else {
+      classes.remove('bg-logo');
+    }
+  }
+  navbarTextChange(scrollY){
+    let classes = document.querySelector("#navbar_main").classList;
+    if (scrollY >= 120) {
+      classes.add('navbar-dark');
+      classes.remove('navbar-light');
+    } else {
+      classes.remove('navbar-dark');
+      classes.add('navbar-light');
+    }
+  }
+
 }
