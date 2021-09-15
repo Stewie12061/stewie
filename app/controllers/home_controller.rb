@@ -23,46 +23,11 @@ class HomeController < ApplicationController
       }
     ]
 
-    @services =[
-      {
-        icon: "fas fa-pencil-alt",
-        title: "Design",
-        description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-      },
-      {
-        icon: "fas fa-cogs",
-        title: "Development",
-        description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-      },
-      {
-        icon: "fas fa-camera-retro",
-        title: "Photography",
-        description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-      },
-      {
-        icon: "fas fa-search",
-        title: "Seo",
-        description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-      }
-    ]
 
-    @fun_facts =[
-      {
-        icon: "fas fa-toolbox",
-        number: "300",
-        text: "Project Done"
-      },
-      {
-        icon: "fas fa-clock",
-        number: "1700+",
-        text: "Hours Worked"
-      },
-      {
-        icon: "fas fa-trophy",
-        number: "37",
-        text: "Awards Won"
-      }
-    ]
+    @services = Service.all
+
+    
+    @fun_facts = Project.all
 
     @about =[
       {

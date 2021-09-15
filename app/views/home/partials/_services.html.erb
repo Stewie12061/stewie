@@ -4,9 +4,9 @@
       <% @services.each do |service| %>
         <div class="col-md-3 text-center">
           <div class="single_service">
-            <i class="<%= service[:icon] %>"></i>
-            <h2> <%= service[:title] %> </h2>
-            <p> <%= service[:description] %></p>
+            <i class="<%= service.icon %>"></i>
+            <h2> <%= service.title %> </h2>
+            <p> <%= service.description %></p>
           </div>
         </div>
       <% end %>

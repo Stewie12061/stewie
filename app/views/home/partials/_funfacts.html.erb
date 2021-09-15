@@ -7,9 +7,9 @@
             <% @fun_facts.each do |funfact| %>
               <div class="col-md-4">
                 <div class="single_count">
-                  <i class="<%= funfact[:icon] %>"></i>
-                  <h3> <%= funfact[:number] %></h3>
-                  <p> <%= funfact[:text] %></p>
+                  <i class="<%= funfact.icon %>"></i>
+                  <h3> <%= funfact.value %></h3>
+                  <p> <%= funfact.text %></p>
                 </div>
               </div>
             <% end %>
