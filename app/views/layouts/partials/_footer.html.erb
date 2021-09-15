@@ -14,11 +14,9 @@
         <div class="social">
           <h2>Follow Me on Here</h2>
           <ul class="icon_list">
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fab fa-dribbble"></i></a></li>
+            <% @socials.each do |social| %>
+              <li><a href=""><i class="<%= social[:icon] %>"></i></a></li>
+            <% end %>
           </ul>
         </div>
       </div>
