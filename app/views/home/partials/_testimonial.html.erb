@@ -3,34 +3,18 @@
     <div class="splide" data-target="slide"> 
       <div class="splide__track">
         <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="single_testimonial text-center">
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores<br /> eos qui ratione voluptatem sequi nesciunt.</p>
-              <h4>JOHN DOE</h4>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="single_testimonial text-center">
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                non numquam eius<br /> modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-              <h4>JOHN SMITH</h4>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="single_testimonial text-center">
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores<br /> eos qui ratione voluptatem sequi nesciunt.</p>
-              <h4>JOHN DOE</h4>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="single_testimonial text-center">
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                non numquam eius<br /> modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-              <h4>JOHN SMITH</h4>
-            </div>
-          </li>
+          <% @testimonials.each do |tes| %>
+            <li class="splide__slide">
+              <div class="single_testimonial text-center">
+                <p>
+                  <%= tes[:content] %>
+                </p>
+                <h4>
+                  <%= tes[:author] %>
+                </h4>
+              </div>
+            </li>
+          <% end %>
         </ul>
       </div>
     </div>
