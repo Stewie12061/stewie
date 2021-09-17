@@ -60,3 +60,5 @@ gem "stimulus_reflex", "~> 3.4"
 gem "annotate", "~> 3.1"
 
 gem "trestle", "~> 0.9.5"
+
+gem "trestle-auth", "~> 0.4.3"
