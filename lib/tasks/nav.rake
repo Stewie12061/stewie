@@ -5,22 +5,22 @@ namespace :nav do
 
     Nav.create([
       {
-        title:"Home"
+        title:"Home" , href:"#"
       },
       {
-        title:"Services"
+        title:"Services", href:"#"
       },
       {
-        title:"About"
+        title:"About", href:"#"
       },
       {
-        title:"Testimonial"
+        title:"Testimonial", href:"#"
       },
       {
-        title:"Work"
+        title:"Work", href:"#"
       },
       {
-        title:"Contact"
+        title:"Contact", href:"#contact-form"
       }
     ])
   end

@@ -1,7 +1,7 @@
 <ul class="navbar-nav navbar-right">
   <% @nav.each do |nav| %>
     <li class="nav-item">
-    <a class="nav-link active" href="#"><%= nav.title %></a>
+    <a class="nav-link active" href="<%= nav.href %>"><%= nav.title %></a>
   </li>
   <% end %>
   
