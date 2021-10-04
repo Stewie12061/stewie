@@ -88,7 +88,7 @@ Rails.application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :user_name            => "nhut170501@gmail.com",
-    :password             => "lalisa270397",
+    :password             => "rxagzpmugjnzklmz",
     :authentication       => "plain",
     :enable_starttls_auto => true
   }  
