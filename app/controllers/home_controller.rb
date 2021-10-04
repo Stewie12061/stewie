@@ -15,4 +15,8 @@ class HomeController < ApplicationController
     
     @nav = Nav.all
   end
+
+  def contact
+    
+  end
 end
