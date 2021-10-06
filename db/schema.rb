@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_01_125701) do
+ActiveRecord::Schema.define(version: 2021_10_06_125419) do
 
   create_table "about_texts", force: :cascade do |t|
     t.text "text"
@@ -32,6 +32,14 @@ ActiveRecord::Schema.define(version: 2021_10_01_125701) do
     t.string "last_name"
     t.string "remember_token"
     t.datetime "remember_token_expires_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "jobs", force: :cascade do |t|
+    t.integer "status", default: 0
+    t.string "args"
+    t.integer "job_type", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
